@@ -1,0 +1,34 @@
+<div >
+  <div class="container-xxl">
+  <main class="main">
+    <h2>Calcule</h2>
+
+      <form class="calc">
+        <div class="mb-3">
+          <label  class="v1">Valor 1:</label>
+          <input type="number"  class="form-control valor1" name="valor1" [(ngModel)]="valor1"   required />
+
+        </div>
+        <div class="mb-2">
+          <label   class="v2">Valor 2:</label>
+          <input type="number"  class="form-control valor2" [(ngModel)]="valor2" name="valor2"  required />
+        </div>
+
+
+        <button type="button" value="number"  name="soma" (click)="somar()" class="btn btn-success soma">Somar</button>
+
+        <button type="button" value="number"  name="sub"  (click)="subtrair()"  class="btn btn-danger sub">Subtrair</button>
+
+        <button type="button" id="reset" name="reset" class="btn btn-secondary reset" (click)="reset()">Reset</button>
+
+      </form>
+      <div class="results">
+        Resultado: {{results}}
+      </div>
+
+  </main>
+</div>
+</div>
+
+
+
