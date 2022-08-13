@@ -11,7 +11,7 @@ export class MainComponent implements OnInit {
 valor1: number = 0;
 valor2: number = 0;
 results!: number;
-//resetar: boolean = false;
+reset!: number;
 
   constructor() { }
 
@@ -26,10 +26,10 @@ results!: number;
     return this.results;
    }
 
-   reset(): void{
-    this.valor1 = 0;
-    this.valor2 = 0;
-    this.results = 0;
+   resetar(){
+    this.valor1 = this.reset;
+    this.valor2 = this.reset;
+    this.results = this.reset;
 
 
 
